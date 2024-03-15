@@ -2,7 +2,7 @@ export const Menu: React.FC = () => {
   return (
     <aside className="column is-3 is-narrow-mobile is-fullheigth section is-hidden-mobile">
       <p className="menu-label is-hidden-touch">
-        Controle de Lacres
+        Controle de Lotes
       </p>
       <ul className="menu-list">
         <li>
