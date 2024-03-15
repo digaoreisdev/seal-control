@@ -1,10 +1,12 @@
+import { Menu } from './menu' //Importando o index.tsx do menu
+
 export const Layout: React.FC = () => {
   return (
     <div className="app">
       <section className="main-content columns is-fullheight">
-        { /** menu ficará aqui */ }
+        <Menu />
         
-        <div className="container colunm is-10">
+        <div className="container column is-9">
           <div className="section">
             <div className="card">
               
