@@ -1,0 +1,1 @@
+export { CadastroChecklist } from './cadastro'

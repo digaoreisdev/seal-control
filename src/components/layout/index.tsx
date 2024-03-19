@@ -1,6 +1,12 @@
+import { ReactNode } from 'react';
 import { Menu } from './menu' //Importando o index.tsx do menu
 
-export const Layout: React.FC = () => {
+interface LayoutProps {
+  titulo?: string;
+  children?: ReactNode;
+}
+
+export const Layout: React.FC<LayoutProps> = (props: LayoutProps) => {
   return (
     <div className="app">
       <section className="main-content columns is-fullheight">
@@ -12,13 +18,13 @@ export const Layout: React.FC = () => {
               
               <div className="card-header">
                 <p className="card-header-title">
-                  Cadastro
+                  {props.titulo}
                 </p>
               </div>
               
               <div className="card-content">
                 <p className="content">
-                  Conteúdo
+                  { props.children }
                 </p>
               </div>
               
