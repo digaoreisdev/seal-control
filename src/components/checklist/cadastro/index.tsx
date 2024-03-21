@@ -5,7 +5,7 @@ export const CadastroChecklist: React.FC = () => {
   return (
     <Layout titulo='Cadastro de Checklist' >
       <div className='field'>
-        <label className='label' htmlFor='inputData'>Data: *</label>
+        <label className='label' htmlFor='inputData'>Data:*</label>
         <div className='control'>
           <input  className='input' 
                   id='inputData'
@@ -13,8 +13,8 @@ export const CadastroChecklist: React.FC = () => {
         </div>
       </div>
       
-      <div className='field'>
-        <label className='label' htmlFor='selectVeiculo'>Veículo: *</label>
+      <div className='field is-grouped'>
+        <label className='label' htmlFor='selectVeiculo'>Veículo:*</label>
         <div className='control'>
           <div className='select'>
             <select className="is-hover" id='selectVeiculo'>
@@ -23,28 +23,37 @@ export const CadastroChecklist: React.FC = () => {
             </select>            
           </div>
         </div>
-      </div>
-      
-      <div className='field'>
-        <label className='label' htmlFor='inputMotorista'>Motorista: *</label>
+        
+        <label className='label' htmlFor='inputMotorista'>Motorista:*</label>
         <div className='control'>
           <input  className='input'
                   id='inputMotorista'
                   placeholder='Motorista' />
         </div>
-      </div>
-      
-      <div className='field'>
-        <label className='label' htmlFor='inputConferente'>Conferido Por: *</label>
+        
+        <label className='label' htmlFor='inputConferente'>Conferido Por:*</label>
         <div className='control'>
           <input  className='input'
                   id='inputConferente'
                   placeholder='Conferido Por' />
         </div>
+        
+        <label className='label' htmlFor='selectEmissor'>Usuário Emissor:*</label>
+        <div className='control'>
+          <div className='select'>
+            <select className="is-hover" id='selectEmissor'>
+              <option>Logistica - Pedro Reis</option>
+              <option>Logistica - Fernanda</option>
+              <option>Adm Lojas - Lucas Pain</option>
+              <option>Supervisão - Rodrigo Reis</option>
+              <option>Supervisão - Nerildo</option>
+            </select>            
+          </div>
+        </div>
       </div>
       
-      <div className='field'>
-        <label className='label' htmlFor='selectOrigem'>Origem: *</label>
+      <div className='field is-grouped'>
+        <label className='label' htmlFor='selectOrigem'>Origem:*</label>
         <div className='control'>
           <div className='select'>
             <select className="is-hover" id='selectOrigem'>
@@ -61,10 +70,8 @@ export const CadastroChecklist: React.FC = () => {
             </select>            
           </div>
         </div>
-      </div>
-      
-      <div className='field'>
-        <label className='label' htmlFor='selectDestino'>Destino: *</label>
+        
+        <label className='label' htmlFor='selectDestino'>Destino:*</label>
         <div className='control'>
           <div className='select'>
             <select className="is-hover" id='selectDestino'>
@@ -83,63 +90,49 @@ export const CadastroChecklist: React.FC = () => {
         </div>
       </div>
       
-      <div className='field'>
-        <label className='label' htmlFor='selectEmissor'>Usuário Emissor: *</label>
+      <div className='field is-grouped'>
+        <label className='label is-small' htmlFor='inputLacre1'>Lacre 1:*</label>
         <div className='control'>
-          <div className='select'>
-            <select className="is-hover" id='selectEmissor'>
-              <option>Logistica - Pedro Reis</option>
-              <option>Logistica - Fernanda</option>
-              <option>Adm Lojas - Lucas Pain</option>
-              <option>Supervisão - Rodrigo Reis</option>
-              <option>Supervisão - Nerildo</option>
-            </select>            
-          </div>
-        </div>
-      </div>
-      
-      <div className='field'>
-        <label className='label' htmlFor='inputLacre1'>Número Lacre 1: *</label>
-        <div className='control'>
-          <input  className='input'
+          <input  className='input  is-small'
                   id='inputLacre1'
-                  placeholder='Número lacre 1' />
+                  placeholder='Lacre 1' />
         </div>
-      </div>
-      <div className='field'>
-        <label className='label' htmlFor='inputLacre2'>Número Lacre 2: *</label>
+        
+        <label className='label is-small' htmlFor='inputLacre2'>Lacre 2:</label>
         <div className='control'>
-          <input  className='input'
+          <input  className='input is-small'
                   id='inputLacre2'
-                  placeholder='Número lacre 2' />
+                  placeholder='Lacre 2' />
         </div>
-      </div>
-      <div className='field'>
-        <label className='label' htmlFor='inputLacre3'>Número Lacre 3: *</label>
+        
+        <label className='label is-small' htmlFor='inputLacre3'>Lacre 3:</label>
         <div className='control'>
-          <input  className='input'
+          <input  className='input is-small'
                   id='inputLacre3'
-                  placeholder='Número lacre 3' />
+                  placeholder='Lacre 3' />
         </div>
-      </div>
-      <div className='field'>
-        <label className='label' htmlFor='inputLacre4'>Número Lacre 4: *</label>
+        
+        <label className='label is-small' htmlFor='inputLacre4'>Lacre 4:</label>
         <div className='control'>
-          <input  className='input'
+          <input  className='input is-small'
                   id='inputLacre4'
-                  placeholder='Número lacre 4' />
+                  placeholder='Lacre 4' />
         </div>
-      </div>
-      <div className='field'>
-        <label className='label' htmlFor='inputLacre5'>Número Lacre 5: *</label>
+        
+        <label className='label is-small' htmlFor='inputLacre5'>Lacre 5:</label>
         <div className='control'>
-          <input  className='input'
+          <input  className='input is-small'
                   id='inputLacre5'
-                  placeholder='Número lacre 5' />
+                  placeholder='Lacre 5' />
         </div>
       </div>
       
-      <button className="button is-success is-outlined is-hovred">Gerar Checklist</button>
+      <div className='field is-grouped'>
+        <div className='control'>
+          <button className="button is-link is-success is-outlined is-hovred">Gerar Checklist</button>
+          <button className="button is-link is-danger is-outlined is-hovred">Voltar</button>
+        </div>
+      </div>
     </Layout>
   )
 }
